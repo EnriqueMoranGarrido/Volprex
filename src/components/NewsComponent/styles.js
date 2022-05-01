@@ -6,20 +6,20 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: "4%",
     width: "100%",
-    height: DeviceHeight / 3,
+    height: DeviceHeight / 3.5,
     backgroundColor: "#f2eeed",
     borderRadius: 20,
-    shadowColor: "#000",
+    shadowColor: "#a10d21",
     shadowOffset: {
-      width: 5,
-      height: 5,
+      width: 10,
+      height: 50,
     },
-    shadowOpacity: 0.75,
+    shadowOpacity: 0.5,
     shadowRadius: 5,
-    elevation: 9,
+    elevation: 4,
   },
   imageContainer: {
-    height: DeviceHeight / 5,
+    height: DeviceHeight / 6.6,
   },
   image: {
     width: "100%",
