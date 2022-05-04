@@ -17,9 +17,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     shadowRadius: 5,
     elevation: 4,
+    alignItems: "center",
   },
   imageContainer: {
     height: DeviceHeight / 6.6,
+    width: "100%",
   },
   image: {
     width: "100%",

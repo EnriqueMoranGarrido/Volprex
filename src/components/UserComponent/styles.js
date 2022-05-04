@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   imageContainer: {
     width: DeviceWidth,
-    height: DeviceHeight / 2,
+    height: DeviceHeight / 2.5,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   name: {
+    letterSpacing: 2,
     fontSize: 25,
     fontWeight: "bold",
   },
@@ -31,36 +32,44 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   emailText: {
+    letterSpacing: 1,
     color: "grey",
   },
   email: {
+    letterSpacing: 1,
     fontSize: 17,
   },
   phoneContainer: {
     marginVertical: 10,
   },
   phoneText: {
+    letterSpacing: 1,
     color: "grey",
   },
   phone: {
+    letterSpacing: 1,
     fontSize: 17,
   },
   insuranceContainer: {
     marginVertical: 10,
   },
   insuranceText: {
+    letterSpacing: 1,
     color: "grey",
   },
   insurance: {
+    letterSpacing: 1,
     fontSize: 17,
   },
   ageContainer: {
     marginVertical: 10,
   },
   ageText: {
+    letterSpacing: 1,
     color: "grey",
   },
   age: {
+    letterSpacing: 1,
     fontSize: 17,
   },
 });

@@ -1,7 +1,6 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import styles from "./styles";
-import news from "../../../assets/Data/news";
 
 const NewsComponent = (props) => {
   const news = props.news;

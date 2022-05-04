@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
 import { Button, Image, View, Platform, Text, Pressable } from "react-native";
+import React, { useState, useEffect } from "react";
 import * as ImagePicker from "expo-image-picker";
 import { LinearGradient } from "expo-linear-gradient";
+
 import styles from "./styles";
 
 const UserComponent = ({ information }) => {
   const [image, setImage] = useState(null);
 
   const pickImage = async () => {
-    // No permissions request is necessary for launching the image library
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.All,
       allowsEditing: true,
@@ -26,9 +26,8 @@ const UserComponent = ({ information }) => {
   const onPress = () => {
     pickImage();
   };
-
   return (
-    <View style={styles.container}>
+    <View>
       <Pressable onPress={onPress}>
         <LinearGradient
           style={styles.imageContainer}
@@ -49,7 +48,6 @@ const UserComponent = ({ information }) => {
           )}
         </LinearGradient>
       </Pressable>
-
       <View style={styles.textContainer}>
         <Text style={styles.name}>{information.name}</Text>
         <View style={styles.emailContainer}>

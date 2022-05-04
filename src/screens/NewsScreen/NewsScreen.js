@@ -6,9 +6,9 @@ import NewsComponent from "../../components/NewsComponent";
 
 const NewsScreen = () => {
   return (
-    <View style={{ width: "95%" }}>
+    <View style={styles.container}>
       <FlatList
-        data={pins}
+        data={news}
         renderItem={({ item }) => <NewsComponent news={item} />}
         initialScrollIndex={0}
         showsVerticalScrollIndicator={false}
