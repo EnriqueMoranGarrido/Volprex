@@ -38,11 +38,11 @@ const UserComponent = ({ information }) => {
           angle={250}
           angleCenter={{ x: 0.5, y: 0.5 }}
         >
-          {image && (
+          {image ? (
+            <Image source={{ uri: image }} style={styles.profileImage} />
+          ) : (
             <Image
-              source={{
-                uri: image == undefined ? DEFAULT_IMAGE : image,
-              }}
+              source={require("../../../assets/Data/yo.jpg")}
               style={styles.profileImage}
             />
           )}
@@ -50,22 +50,39 @@ const UserComponent = ({ information }) => {
       </Pressable>
       <View style={styles.textContainer}>
         <Text style={styles.name}>{information.name}</Text>
-        <View style={styles.emailContainer}>
-          <Text style={styles.emailText}>Email</Text>
-          <Text style={styles.email}>{information.email}</Text>
-        </View>
-        <View style={styles.phoneContainer}>
-          <Text style={styles.phoneText}>Phone number</Text>
-          <Text style={styles.phone}>{information.phone}</Text>
-        </View>
-        <View style={styles.insuranceContainer}>
-          <Text style={styles.insuranceText}>Insurance Policy</Text>
-          <Text style={styles.insurance}>{information.insurance}</Text>
-        </View>
-        <View style={styles.ageContainer}>
-          <Text style={styles.ageText}>Age</Text>
-          <Text style={styles.age}>{information.age}</Text>
-        </View>
+        {information.hospital ? (
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoText}>Email</Text>
+            <Text style={styles.info}>{information.email}</Text>
+          </View>
+        ) : null}
+        {information.email ? (
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoText}>Email</Text>
+            <Text style={styles.info}>{information.email}</Text>
+          </View>
+        ) : null}
+
+        {information.phone ? (
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoText}>Phone number</Text>
+            <Text style={styles.info}>{information.phone}</Text>
+          </View>
+        ) : null}
+
+        {information.insurance ? (
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoText}>Insurance Policy</Text>
+            <Text style={styles.info}>{information.insurance}</Text>
+          </View>
+        ) : null}
+
+        {information.age ? (
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoText}>Age</Text>
+            <Text style={styles.info}>{information.age}</Text>
+          </View>
+        ) : null}
       </View>
     </View>
   );

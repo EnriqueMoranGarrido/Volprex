@@ -28,49 +28,16 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "bold",
   },
-  emailContainer: {
-    marginVertical: 10,
-  },
-  emailText: {
+  infoText: {
     letterSpacing: 1,
     color: "grey",
   },
-  email: {
+  info: {
     letterSpacing: 1,
     fontSize: 17,
   },
-  phoneContainer: {
+  infoContainer: {
     marginVertical: 10,
-  },
-  phoneText: {
-    letterSpacing: 1,
-    color: "grey",
-  },
-  phone: {
-    letterSpacing: 1,
-    fontSize: 17,
-  },
-  insuranceContainer: {
-    marginVertical: 10,
-  },
-  insuranceText: {
-    letterSpacing: 1,
-    color: "grey",
-  },
-  insurance: {
-    letterSpacing: 1,
-    fontSize: 17,
-  },
-  ageContainer: {
-    marginVertical: 10,
-  },
-  ageText: {
-    letterSpacing: 1,
-    color: "grey",
-  },
-  age: {
-    letterSpacing: 1,
-    fontSize: 17,
   },
 });
 

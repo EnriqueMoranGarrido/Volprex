@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import ProfileScreen from "../src/screens/ProfileScreen";
 import NewsScreen from "../src/screens/NewsScreen";
+import EmergencyScreen from "../src/screens/EmergencyScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -15,6 +16,7 @@ const Navigation = () => {
         <Tab.Navigator>
           <Tab.Screen name="Profile" component={ProfileScreen} />
           <Tab.Screen name="News" component={NewsScreen} />
+          <Tab.Screen name="Emergency" component={EmergencyScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     </View>
